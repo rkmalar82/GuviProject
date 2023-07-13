@@ -1,0 +1,11 @@
+
+version: '3'
+services:
+  app:
+    container_name: docker-react-app-c
+    image: docker-react-app-i
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - 8080:80
